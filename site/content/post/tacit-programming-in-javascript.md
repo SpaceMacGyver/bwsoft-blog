@@ -238,7 +238,7 @@ const SMALLEST_POSSIBLE_VALUE = 0;
 const findLargestValue = reduce(max, SMALLEST_POSSIBLE_VALUE);
 const returnInputAndLargestItem = list => [
     list,
-    findLargestValue(list)
+    findLargestValue(list)
 ];
 const doubleTheList = map(x => x * 2);
 
