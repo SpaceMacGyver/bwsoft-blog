@@ -240,7 +240,7 @@ const returnInputAndLargestItem = list => [
     list,
     findLargestValue(list)
 ];
-const doubleTheList = map(x => x * 2);
+const doubleTheList = map(x => x * 2);
 
 const doubleItemsAndFindLargest = compose(
     returnInputAndLargestItem,
