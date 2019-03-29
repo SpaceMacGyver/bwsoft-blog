@@ -89,6 +89,7 @@ function doubleItemsAndFindLargest(listOfNumbers) {
 ```
 
 From a black-box perspective, this function is pure, in that it takes in a value and produces a new value without affecting the input, and does not depend on any external dependencies.  Internally, though, there is considerable mutation:
+
 * `doubledList` is appended to for every item that is contained in `listOfNumbers`
 * `largestItem` is redefined whenever a number larger than its current value is encountered
 
@@ -248,6 +249,7 @@ const doubleItemsAndFindLargest = compose(
 ```
 
 Unfortunately, because we're technically returning two distinct items from our function, some complexity will remain regardless of how we approach the problem.  However, this final form illustrates some qualities that lend themselves well to both readability and reuse:
+
 * Every operation is distilled into a small unit of computation.
 * Complex operations are formed by [composing](https://en.wikipedia.org/wiki/Function_composition_(computer_science)) smaller operations.
 * Operations do what they say, and say what they do, through good naming.
