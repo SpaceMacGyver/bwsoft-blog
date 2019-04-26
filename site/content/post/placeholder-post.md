@@ -1,9 +1,7 @@
 ---
 title: 'Using what Rust taught me in C#'
 date: 2019-03-19T10:30:00.000Z
-description: >-
-  Part 1 in a series about applying lessons learned from a modern systems
-  language
+description: Part 1 of the the Lessons Learned from Rust series
 ---
 ## A [not-so-]brief introduction to Rust
 
