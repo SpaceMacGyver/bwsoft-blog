@@ -47,6 +47,7 @@ $requestProcessor = New-Object -ComObject QBXMLRP2.RequestProcessor
 ```
 
 If you encounter any errors, possible explanations include:
+
 * The QB Desktop SDK is not installed
 * You're not running in a 32-bit process
 * The class name has a typo
@@ -86,6 +87,7 @@ Point 1 is important, because as you establish a connection to QuickBooks you wi
 As for point 2, you came here for a reason, right?  Refer back to the [API Reference](https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference) documentation to find the specific behavior you wish to perform.
 
 For illustration purposes, I'll be working with the following assumptions:
+
 * We're calling our script "API Example 123" (sorry, I'm bad at naming stuff)
 * We are planning to run a [Payroll Summary report](https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference/payrollsummaryreportquery) with a custom date range, and are otherwise leaving everything as default.
 * I've picked up one of the sample company files (service-based business) from QB and placed it in my Documents folder.
