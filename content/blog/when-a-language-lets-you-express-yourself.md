@@ -7,7 +7,7 @@ draft: false
 weight: 50
 categories:
   - Development
-tags: ["C#", "Rust"]
+tags: ["C-sharp", "Rust"]
 contributors: []
 pinned: false
 homepage: false
