@@ -1,0 +1,14 @@
+// Put your custom SCSS code here
+html[data-bs-theme="dark"] {
+  .logo {
+    filter: invert(1);
+  }
+}
+
+.logo {
+  padding-bottom: 2rem;
+}
+
+.lead {
+  font-size: 2rem;
+}
