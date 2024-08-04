@@ -25,11 +25,27 @@
   <section class="section section-md section-features">
     <div class="container">
       <div class="row justify-content-center text-center">
+        <h2>Latest articles</h2>
         {{ $blog := site.GetPage "blog" }}
-        {{ range first 4 $blog.RegularPages }}
+        {{ range first 3 $blog.RegularPages }}
         <div class="col-lg-5">
           <a href="{{ .Permalink }}"><h2 class="h4">{{ .Title }}</h2></a>
           <p>{{ .Description }}</p>
+          <em><script>
+            (() => {
+              const authored = new Date('{{ .Date }}');
+              const since = new Date().valueOf() - authored.valueOf();
+              const sinceInDays = Math.floor(since / (86400 * 1000));
+
+              if (sinceInDays === 0) {
+                document.write('Today');
+              } else if (sinceInDays === 1) {
+                document.write('Yesterday');
+              } else {
+                document.write(sinceInDays.toString(10) + ' days ago');
+              }
+            })()
+          </script></em>
         </div>
         {{ end }}
       </div>
