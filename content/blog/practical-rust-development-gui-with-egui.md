@@ -1,12 +1,15 @@
 ---
 title: Practical Rust - Desktop GUI development with egui (pt. 1)
 description: Immediate-mode GUI development in Rust that is performant and simple
+params:
+  author: Justin Bell
 date: 2024-07-30T07:00:32-0500
 lastmod: 2024-07-30T07:00:32-0500
 draft: false
 weight: 50
 categories:
   - Development
+  - Practical Rust
 tags:
   - Rust
   - egui
