@@ -8,7 +8,7 @@ date: 2024-08-11T07:00:00-05:00
 lastmod: 2024-08-11T07:00:00-05:00
 draft: false
 weight: 999
-toc: false
+toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -16,7 +16,10 @@ seo:
   noindex: false # false (default) or true
 ---
 
-*I'll periodically update this page to reflect the project's evolution; keep an eye on it for updates.*
+## Articles
+
+I'll be blogging about my progress on this effort, and any status updates to this project can be found [there](/tags/graph_notes).  Otherwise,
+if the nature of the project itself were to change over time, I'll be updating this document to reflect that.
 
 ## Overview
 
@@ -63,7 +66,11 @@ A future version of this application would be multi-user and offer collaborative
 * Schema-based enforcement of structure to ensure graphs are well-formed for specific use-cases
 
 Additionally, while the above is with respect to note-taking and document management, there may be other viable uses
-for the engine, and it may have opportunity to be adapted to custom analysis and reporting.
+for the engine, and it may have opportunity to be adapted.  This could be supported via:
+
+* Extensibility (could be accomplished via scripting layer, schema-driven architecture, dynamic linking)
+* Repurposing (e.g. using the platform to create a time-tracking system, analytics engine, CMS)
+* Exposing an API to allow third-party systems to interact with the application
 
 ## The toolkit
 
@@ -118,3 +125,19 @@ graph database option available, but this one in particular offers me several ad
 * Can be nested within my app rather than living as an external process
 * Data modeling with structured schema
 * Rich query/DML grammar
+
+## Development philosophy
+
+First, I'll be developing this application as an open source project.  Since I got to this point in my career on the backs
+of many great projects, I'd like to follow in their footsteps by following in their steps.  As such, I'll choose the MIT
+license, which I believe aids the project's future in my absence.  Of course, if I want to monetize this product somehow
+down the road, I'll need to find some way that doesn't rely explicitly on project distributables, and this choice of license
+also doesn't prevent someone else from taking my work and doing something competitive with it.  To which I say, terrific and
+best of luck; and, maybe remember me when you make it big.
+
+Second, I have opinions about test-driven development.  Having once been dogmatic to the point of being obnoxious, I now
+approach tests in a different way.  Things I probably (at least, not at first) won't test include: data, UX, or things that
+are self-explanatory and/or don't justify externalizing the rationale and behavior.  I may periodically encounter the need
+for behaviors that would benefit from being well-specified, at which time I'll employ BDD to drive the implementation.
+As appropriate, I may also employ Rust's [examples](https://doc.rust-lang.org/cargo/commands/cargo-run.html#examples)
+to showcase particular features or experiences.
