@@ -15,6 +15,8 @@ tags:
 contributors: []
 ---
 
+*This is the first article in a series documenting my progress on the [Graph Notes](/showcase/graph-notes) project.*
+
 My primary goal for today is to get some scaffolding in place.  At the end of this, I'll have a repository, some commits
 for you to explore, and enough of a project that you could pull down and run if so inclined.
 
