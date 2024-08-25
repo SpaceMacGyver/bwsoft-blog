@@ -1,6 +1,7 @@
 ---
 title: Graph Notes - Creating the project
 description: Just getting my feet wet, provisioning some resources to get the ball rolling...
+slug: graph-notes-01
 params:
   author: Justin Bell
 date: 2024-08-15T08:00:00.000-05:00
