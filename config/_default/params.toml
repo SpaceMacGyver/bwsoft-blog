@@ -1,13 +1,12 @@
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
+title = "Bellwether Softworks LLC"
+description = "Custom software development and consulting services"
 images = ["cover.png"]
 
 # mainSections
 mainSections = ["docs"]
 
 [social]
-  twitter = "getdoks"
 
 # Doks (@hyas/doks-core)
 [doks]
